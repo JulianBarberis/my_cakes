@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My cakes | Contactanos</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="../index.html"><img src="../assets/logo.png" alt="Logo"></a>
+            </div>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./sobre_nosotros.html">Sobre nosotros</a></li>
+                <li><a href="./contactanos.html">Contactanos</a></li>
+                <li><a href="./como_encontrarnos.html">Como encontrarnos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contactanos y hace tu pedido</h1>
+
+        <h2>Contactanos y pedi el presupuesto para tu torta, budin, o lo que mas te guste.</h2>
+
+        <form action="">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre"
+                required>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido"
+                required>
+                <label for="correo">Correo Electronico</label>
+                <input type="email" name="correo" id="correo" placeholder="Ingresa tu mail"
+                required>
+                <label for="num">Numero de telefono</label>
+                <input type="number" name="number" id="number" placeholder="Ingresa un numero"
+                required>
+            </fieldset>
+            <fieldset>
+                <legend>Hace tu pedido</legend>
+
+                <!--Menu desplegable-->
+                <label for="pedido">¿Que vas a pedir?</label>
+                <select name="pedido" id="pedido">
+                    <option value="value">Selecciona que pedir</option>
+                    <option value="torta_decorada">Torta decorada</option>
+                    <option value="brownie">Brownie</option>
+                    <option value="tarta_frutilla">Tarta de frutilla</option>
+                    <option value="number/letter_cake">Number/Letter Cake</option>
+                </select>
+
+                <!--Seleccionar una -->
+                <label for="Invitados">¿Cuantas personas van a comer?</label>
+                <input type="radio" name="cant">10
+                <input type="radio" name="cant">20
+                <input type="radio" name="cant">30
+                <input type="radio" name="cant">50
+                <input type="radio" name="cant">75 o mas
+
+                <br><br>
+
+                <!--Checkbox-->
+                <div> ¿Vas a querer algo mas? </div>
+                <input type="checkbox" name="adicional">Alfajorcitos de maicena
+                <input type="checkbox" name="adicional">Budín de limon
+                <input type="checkbox" name="adicional">Cookies
+
+                <br>
+                <br>
+
+                <!-- Textarea-->
+                <label for="Detalles">Detalles que quieras agregar</label>
+                <br>
+                <textarea name="comentario" id="come" cols="50" rows="10" maxlength="500">
+                </textarea>
+                
+                <br>
+                <br>
+                <input type="submit" value="Hacer pedido">
+                <input type="reset" value="Limpiar formulario">
+                
+            </fieldset>
+        </form>
+
+
+    </main>
+
+    <br><br>
+    
+    <footer>
+        <li>Todos los derechos reservados</li>
+        <nav>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./sobre_nosotros.html">Sobre nosotros</a></li>
+            <li><a href="./contactanos.html">Contactanos</a></li>
+            <li><a href="./como_encontrarnos.html">Como encontrarnos</a></li>
+            
+            <li>Nuestras redes:</li>
+            <li><a href="https://www.facebook.com/"><img src="../assets/Facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://www.instagram.com/"><img src="../assets/Instagram.jpg" alt="Instagram"></a></li>
+            <li><a href="https://web.whatsapp.com/"><img src="../assets/Whatsapp.jpg" alt="Whatsapp"></a></li>
+        </nav>
+    </footer>
+</body>
+</html>
