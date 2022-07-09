@@ -234,6 +234,60 @@ img {
 .main__shots{
     grid-area: shots;
 }
+
+/*____________________MAIN-SOBRE_NOSOTROS_________________________  */
+
+.main-sobre_nosotros {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "main-sobre_nosotros__titulo main-sobre_nosotros__titulo "
+    "main-sobre_nosotros__img main-sobre_nosotros__text ";
+    height: 70rem;
+}
+
+.main-sobre_nosotros__titulo{
+    grid-area: main-sobre_nosotros__titulo;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    padding-top: 2rem;
+    height: 10rem;
+}
+
+.main-sobre_nosotros__img { 
+    grid-area:main-sobre_nosotros__img;
+    display: flex;
+    justify-content: center;
+    height: 60rem;
+    width: 100%
+
+}
+.main-sobre_nosotros__img img{
+    height: 50rem;
+    width: 50rem;
+}
+
+.main-sobre_nosotros__text {
+    grid-area: main-sobre_nosotros__text;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+    width: 50rem;
+    color: var(--text-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.main-sobre_nosotros__text p{
+    padding: 0.5rem;
+}
+
+
 /* ______________________FOOTER___________________________ */
 
 .footer {
@@ -287,6 +341,7 @@ img {
 }
 
 @media only screen and (max-width: 1024px){
+    /* ___________MAIN-INDEX_______________ */
     .main__destacados div{
         width: 20rem;
         height: 30rem;
@@ -297,6 +352,33 @@ img {
         height: 20rem;
     }
 
+    /* _____________________MAIN-SOBRE_NOSOTROS___________________ */
+    .main-sobre_nosotros {  
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "main-sobre_nosotros__titulo main-sobre_nosotros__titulo "
+        "main-sobre_nosotros__img main-sobre_nosotros__img"
+        "main-sobre_nosotros__text main-sobre_nosotros__text ";
+        height: 110rem;
+    }
+
+    .main-sobre_nosotros__img{
+        align-items: flex-end;
+        height: 50rem;
+    }
+
+    .main-sobre_nosotros__text {
+        height: 52rem;
+        width: 100%;
+        color: var(--text-color);
+        justify-content: center;
+    }
+
+    .main-sobre_nosotros__text p{
+        width: 50rem;
+
+    }
 }
 
 
