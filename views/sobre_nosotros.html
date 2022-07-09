@@ -8,19 +8,31 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div>
-                <a href="/index.html"><img src="/assets/logo.png" alt="Logo"></a>
-            </div>
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/views/productos.html">Productos</a></li>
-                <li><a href="/views/sobre_nosotros.html">Sobre nosotros</a></li>
-                <li><a href="/views/contactanos.html">Contactanos</a></li>
-                <li><a href="/views/como_encontrarnos.html">Como encontrarnos</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+
+        <div class="header__logo">
+            <a href="../index.html"><img src="../assets/logo.png" alt="Logo"></a>
+        </div>
+
+        <div class="header__titulo">
+            <h1>My Cakes</h1>
+            <h2>Reposteria y Pasteleria</h2>
+        </div>
+
+        <ul class="header__menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./sobre_nosotros.html">Sobre nosotros</a></li>
+            <li><a href="./contactanos.html">Contactanos</a></li>
+            <li><a href="./como_encontrarnos.html">Como encontrarnos</a></li>
+        </ul>
+
+        <div class="header__buscador">
+            <input class="header__buscador--texto" type="text" name="buscador" id="buscador" placeholder="¿Qué estás buscando?"> 
+            <img  class="lupa" src="../assets/lupa.png" alt="lupa">
+        </div>
+
+        
     </header>
 
     <main>
@@ -29,21 +41,35 @@
 
     <br><br>
     
-    <footer>
-        <li>Todos los derechos reservados</li>
-        <nav>
+    <footer class="footer">
+       
+        <div class="footer__derechos">
+        <p>
+            Todos los derechos reservados
 
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="/views/productos.html">Productos</a></li>
-            <li><a href="/views/sobre_nosotros.html">Sobre nosotros</a></li>
-            <li><a href="/views/contactanos.html">Contactanos</a></li>
-            <li><a href="/views/como_encontrarnos.html">Como encontrarnos</a></li>
-            
-            <li>Nuestras redes:</li>
-            <li><a href="https://www.facebook.com/"><img src="/assets/Facebook.png" alt="Facebook"></a></li>
-            <li><a href="https://www.instagram.com/"><img src="/assets/Instagram.jpg" alt="Instagram"></a></li>
-            <li><a href="https://web.whatsapp.com/"><img src="/assets/Whatsapp.jpg" alt="Whatsapp"></a></li>
+        </p>
+        
+        </div>
+
+        <nav class="footer__menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./sobre_nosotros.html">Sobre nosotros</a></li>
+                <li><a href="./contactanos.html">Contactanos</a></li>
+                <li><a href="./como_encontrarnos.html">Como encontrarnos</a></li>
+            </ul>
         </nav>
+
+        <nav >
+            <div class="footer__redes">
+                <a href="https://www.facebook.com/"><img src="../assets/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/"><img src="../assets/instagram.png" alt="Instagram"></a>
+                <a href="https://web.whatsapp.com/"><img src="../assets/whatsapp.png" alt="Whatsapp"></a>
+            </div>
+
+        </nav>
+
     </footer>
 
 </body>
