@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* __________________HEADER__________________ */
+.header{
+    background-image: url(../assets/fondo_header.jpg) ;
+    background-color: rgb(255, 192, 250);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 24rem;
+    width: 100%;
+}
+
+.header__navbar h1{
+    text-align: center;
+    padding: 1rem;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+}
+
+.header__navbar h2{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+
+.header__navbar img{
+    height: 5rem;
+    width: 5rem;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.header__navbar ul{
+    padding: 2rem;
+    list-style-type: none;
+    text-align: center;
+}
+
+.header__navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.header__navbar li{
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: black;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* _____________________MAIN_________________ */
+.main{
+    /*background-image: url(../assets/fondo_main.jpg) ;*/
+    background-color: rgb(167, 230, 230);
+    height: 50rem;
+    width: 100%;
+}
+
+.main h3{
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+
+.main__contenido {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: space-around;
+
+}
+
+.main__contenido img{
+    width: 100%;
+    height: 100%;
+}
+
+.main__contenido div{
+    width: 20rem;
+    height: 20rem;
+    padding: 2rem;
+    font-size: 1.1rem;
+    list-style-type: none;
+
+    
+}
+
+/* ___________________FOOTER___________________ */
+
+.footer{
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 24rem;
+    width: 100%;
+    
+}
+
+
+
+.footer__contenido{
+    padding: 2rem;
+    list-style-type: none;
+    font-size: 1.2rem;
+    display: flex;
+}
+
+.footer__contenido div{
+    text-align: left;
+}
+
+
+.footer__contenido a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer__contenido li{
+    color: white;
+}
+
+
+
+.footer__contenido--redes img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer__contenido--redes{
+    height: 5rem;
+    width: 5rem;
+    display: inline-block;
+}
+
+
