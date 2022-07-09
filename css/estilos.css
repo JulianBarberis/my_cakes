@@ -1,150 +1,324 @@
+/* _____________NORMALIZE________________*/
+
+:root{
+    /* COLORS */
+    --primary: #ED7AA4;
+    --secondary: #F0DBF2;
+    --terciary:#FFFFFF;
+    --coo_foot: #5E4E54;
+    --text-color: #3B3537;
+
+    /* SPACINGS */
+    --spacing-large:6rem;
+    --spacing-medium:2.4rem;
+    --spacing-small:2rem;
+    --spacing-xsmall:1rem;
+    
+    /* FONT-FAMILY */
+    --font-principal:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --font-title: 'Sacramento', cursive;
+
+    /* FONT-SIZES */
+    --text-large:5.2em;
+    --text-medium:2.2em;
+    --text-base: 1.6em;
+    --text-small:1.4em;
+
+}
+
+*::after,
+*::before,
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+html{
+    font-size: 62.5%;
 }
 
-/* __________________HEADER__________________ */
-.header{
-    background-image: url(../assets/fondo_header.jpg) ;
-    background-color: rgb(255, 192, 250);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 24rem;
+body{
+    font-family:var(--font-principal)
+}
+
+ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
     width: 100%;
 }
 
-.header__navbar h1{
-    text-align: center;
-    padding: 1rem;
-    font-size: 3rem;
-    color: rgb(0, 0, 0);
+/* _____________________________HEADER__________________________ */
+.header {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.4fr 0.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "logo titulo titulo titulo titulo titulo titulo titulo titulo titulo titulo titulo"
+    "logo menu-header menu-header menu-header menu-header menu-header menu-header menu-header menu-header menu-header menu-header menu-header"
+    "logo header-buscador header-buscador header-buscador header-buscador header-buscador header-buscador header-buscador header-buscador header-buscador header-buscador header-buscador";
+    
+    /* background-image: url(../assets/fondo_header.jpg) ; */
+    background-color:var(--primary);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 35rem;
+
 }
 
-.header__navbar h2{
-    text-align: center;
-    padding: 1rem;
-    font-size: 2rem;
-    color: rgb(0, 0, 0);
-}
 
-
-.header__navbar img{
-    height: 5rem;
-    width: 5rem;
+.header__logo {
+    display: flex;
+    grid-area: logo;
+    height: 10rem;
+    width: 10rem;
     display: inline-block;
     border-radius: 50%;
+    margin-top:  var(--spacing-medium);
+    margin-left: var(--spacing-medium);
 }
-
-.header__navbar ul{
-    padding: 2rem;
-    list-style-type: none;
+  
+.header__titulo {
+    grid-area: titulo;
     text-align: center;
+    margin-bottom: 2rem;
+    
 }
 
-.header__navbar a{
-    text-decoration: none;
-    color: white;
+.header__titulo h1{
+    margin-top: 4rem;
+    font-family: var(--font-title);
+    font-size: var(--text-large);
+    color: var(--text-color);
+
 }
 
-.header__navbar li{
-    display: inline-block;
-    text-transform: uppercase;
-    background-color: black;
-    padding: 1rem;
-    font-size: 1rem;
-    font-weight: 600;
+.header__titulo h2{
+    margin: var(--spacing-small);
+    font-family: var(--font-title);
+    font-size: var(--text-medium);
+    color: var(--text-color);
 }
-
-/* _____________________MAIN_________________ */
-.main{
-    /*background-image: url(../assets/fondo_main.jpg) ;*/
-    background-color: rgb(167, 230, 230);
-    height: 50rem;
-    width: 100%;
-}
-
-.main h3{
-    padding: 1.5rem;
-    font-size: 1.5rem;
-    text-align: left;
-}
-
-
-.main__contenido {
+  
+.header__menu {
+    grid-area: menu-header;
+    justify-content: center;
     display: flex;
     flex-direction: row;
-    padding: 2rem;
-    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: var(--text-small); 
+
 
 }
 
-.main__contenido img{
-    width: 100%;
-    height: 100%;
-}
-
-.main__contenido div{
-    width: 20rem;
-    height: 20rem;
-    padding: 2rem;
-    font-size: 1.1rem;
-    list-style-type: none;
-
-    
-}
-
-/* ___________________FOOTER___________________ */
-
-.footer{
-    background-color: rgb(0, 0, 0);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 24rem;
-    width: 100%;
-    
-}
-
-
-
-.footer__contenido{
-    padding: 2rem;
-    list-style-type: none;
-    font-size: 1.2rem;
-    display: flex;
-}
-
-.footer__contenido div{
-    text-align: left;
-}
-
-
-.footer__contenido a{
+.header__menu a{
     text-decoration: none;
-    color: white;
+    color: var(--terciary);
 }
 
-.footer__contenido li{
-    color: white;
+.header__menu li{
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    padding: var(--spacing-xsmall);
+    margin: 1rem;
+    background-color: #544C4F;
+
+}
+
+.header__buscador{
+    grid-area: header-buscador;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items:center ;
+    gap: 1rem;
+}
+
+.header__buscador--texto{
+    text-align: center;
+    font-size: var(--text-small);
+    width: 240px;
+    height: 3rem;
+    border: 1px solid var(--text-color);
+    border-radius: 1rem;
+}
+
+.header__buscador img{
+    height: 3rem;
+    width: 3rem;
 }
 
 
-
-.footer__contenido--redes img{
-    width: 100%;
+/* ___________________________MAIN-INDEX__________________________ */
+.main {
+    background-color: var(--secondary);
     height: 100%;
+    width: 100%;
 }
 
-.footer__contenido--redes{
-    height: 5rem;
-    width: 5rem;
-    display: inline-block;
+.main__titulo{
+    font-size: var(--text-medium);
+    padding: 2rem;
+    padding-left: 3rem ;
+    color: var(--text-color);
+
+}
+
+.main__destacados {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "brownie tarta_frutilla number";
+    justify-items: center;
+
+}
+
+.brownie{
+    grid-area: brownie;
+}
+
+.tarta_frutilla{
+    grid-area: tarta_frutilla;
+}
+
+.number{
+    grid-area: number;
+}
+
+.main__destacados img{
+    width: 30rem;
+    height: 30rem;
+    border: solid 0.5rem var(--primary);
+    border-radius: 1.5rem;
+}
+
+.main__destacados div{
+    font-size: var(--text-medium);
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: 40rem;
+    color: var(--text-color);
+}
+  
+.main__shots{
+    display: flex;
+    flex-direction: column;
+    width: 100rem;
+    height: 100rem;
+
+}
+
+.main__shots img{
+    width: 50rem;
+    height: 50rem;
+}
+
+  
+.main__shots{
+    grid-area: shots;
+}
+/* ______________________FOOTER___________________________ */
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "derechos menu redes";
+    background-color: var(--coo_foot);
+    padding: 2rem;
+}
+  
+.footer__derechos { 
+    grid-area: derechos; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--terciary);
+    font-size: var(--text-medium);
+}
+
+  
+.footer__menu { 
+    grid-area: menu;
+    display: flex;
+    font-size: var(--text-medium);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer__menu a{
+    text-decoration: none;
+    color: var(--terciary);
+}
+.footer__redes { 
+    grid-area: redes;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer__redes img{
+    width: 10rem;
+    height: 10rem;
+}
+
+.footer__menu li{
+    padding: 0.5rem;
+}
+
+@media only screen and (max-width: 1024px){
+    .main__destacados div{
+        width: 20rem;
+        height: 30rem;
+    }
+
+    .main__destacados img{
+        width: 20rem;
+        height: 20rem;
+    }
+
 }
 
 
+@media only screen and (max-width: 768px){
+    .footer__redes { 
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+  
+@media only screen and (max-width: 600px){
+    .main__destacados{
+        grid-template-columns: 1fr ; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        grid-auto-flow: column;
+        grid-template-areas: 
+        "brownie" 
+        "tarta_frutilla"
+        "number";
+    }
+    
+   
+
+}
