@@ -355,8 +355,7 @@ img {
     display: flex;
     font-size: var(--text-medium);
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 .footer__menu a{
