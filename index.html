@@ -1,38 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My cakes | Inicio</title>
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- CSS PROPIO -->
     <link rel="stylesheet" href="./css/estilos.css">
+    <title>My cakes | Inicio</title>
 </head>
+
 <body>
     <header class="header">
+        <section class="container-fluid">
 
-        <div class="header__logo">
-            <a href="./index.html"><img src="./assets/logo.png" alt="Logo"></a>
-        </div>
+            <div class="row">
 
-        <div class="header__titulo">
-            <h1>My Cakes</h1>
-            <h2>Reposteria y Pasteleria</h2>
-        </div>
+                <div class="col-1 header__logo">
+                    <a href="./index.html"><img src="./assets/logo.png" alt="Logo"></a>
+                </div>
 
-        <ul class="header__menu">
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./views/productos.html">Productos</a></li>
-            <li><a href="./views/sobre_nosotros.html">Sobre nosotros</a></li>
-            <li><a href="./views/contactanos.html">Contactanos</a></li>
-            <li><a href="./views/como_encontrarnos.html">Como encontrarnos</a></li>
-        </ul>
+                <div class="col-lg-10 col-md-10 col-sm-9 col-xs-8 header__titulo">
+                    <h1>My Cakes</h1>
+                    <h2>Reposteria y Pasteleria</h2>
+                </div>
 
-        <div class="header__buscador">
-            <input class="header__buscador--texto" type="text" name="buscador" id="buscador" placeholder="¿Qué estás buscando?"> 
-            <img  class="lupa" src="./assets/lupa.png" alt="lupa">
-        </div>
+            </div>
 
-        
+            <nav class="row navbar navbar-expand-lg">
+                <section class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./views/productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./views/sobre_nosotros.html">Sobre nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./views/contactanos.html">Contactanos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./views/como_encontrarnos.html">Como encontrarnos</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="¿Que estas buscando?" aria-label="Search">
+                            <button class="btn btn-personal" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </section>
+            </nav>
+
+        </section>
+
     </header>
 
     <main class="main">
@@ -40,54 +72,50 @@
         <div class="main__titulo">
             <h3>Nuestras tortas mas vendidas:</h3>
         </div>
-        
-        <section>
 
-            <div class="main__destacados">
-                <div>
-                    <img src="./assets/brownie.png" alt="brownie">
-                    <p>Brownie</p>
-                    <p>$3400</p>
+        <section class="container-fluid cards__destacadas">
+
+            <div class="card" id="brownie">
+                <img src="./assets/brownie.png" class="card-img-top" alt="brownie">
+                <div class="card-body">
+                  <h5 class="card-title">Brownie</h5>
+                  <p class="card-text">Brownie con o sin nueces, relleno de dulce de leche, crema chantilly o merengue, bañado de chocolate, cubierto y/o decorado con rulitos de chocolate, chocolates, oreos bañadas, macarons, chocolatines de colores.</p>
+                  <a href="./views/contactanos.html" class="btn btn-main">Consulta precio</a>
                 </div>
-
-                <div>
-                    <img src="./assets/tarta_de_frutilla.png" alt="tarta_de_frutilla">
-                    <p>Tarta de Frutilla</p>
-                    <p>$2800</p>
-                </div>
-
-                <div>
-                    <img src="./assets/number_cake.png" alt="number_cake">
-                    <p>Number/Letter Cake</p>
-                    <p>$5200</p>
-                </div>
-
             </div>
-
-            <!-- TODAVIA NO ESTA TERMINADO -->
-            <!-- <div class="main__shots">
-                <img src="./assets/tortas_decoradas.JPG" alt="shots">
-                <p>
-                    Docena de shot.
-                    Capacidad: 100cc cada shot.
-                    Hasta 4 sabores a elección 
-                    Chocotorta/Lemon Pie/Frutillas con crema y oreo
-                </p>
-            </div> -->
-
+    
+            <div class="card" id="tarta_de_frutilla">
+                <img src="./assets/tarta_de_frutilla.png" class="card-img-top" alt="tarta_de_frutilla">
+                <div class="card-body">
+                  <h5 class="card-title">Tarta de Frutilla</h5>
+                  <p class="card-text">Masa sable, rellena de dulce de leche, crema chantilly y frutillas.</p>
+                  <a href="./views/contactanos.html" class="btn btn-main">Consulta precio</a>
+                </div>
+            </div>
+    
+            <div class="card" id="number_cake">
+                <img src="./assets/number_cake.png" class="card-img-top" alt="number_cake">
+                <div class="card-body">
+                  <h5 class="card-title">Number/Letter Cake</h5>
+                  <p class="card-text"> Masa hecha de brownie o masa sable, relleno de dulce de leche, crema chantilly o merengue italiano, ganache de chocolate con leche, ganache de chocolate blanco.
+                    Decoración a elección, macarons, chocolates, oreos bañadas, chocolatines de colores.</p>
+                  <a href="./views/contactanos.html" class="btn btn-main">Consulta precio</a>
+                </div>
+            </div>
         </section>
+        
+        
 
     </main>
 
-    
-    <footer class="footer">
-       
-        <div class="footer__derechos">
-        <p>
-            Todos los derechos reservados
 
-        </p>
-        
+    <footer class="footer">
+
+        <div class="footer__derechos">
+            <p>
+                Todos los derechos reservados
+            </p>
+
         </div>
 
         <nav class="footer__menu">
@@ -100,15 +128,26 @@
             </ul>
         </nav>
 
-        <nav >
-            <div class="footer__redes">
+        <nav class="footer__redes">
+            <div >
                 <a href="https://www.facebook.com/"><img src="./assets/facebook.png" alt="Facebook"></a>
+            </div>
+
+            <div>
                 <a href="https://www.instagram.com/"><img src="./assets/instagram.png" alt="Instagram"></a>
+            </div>
+
+            <div>
                 <a href="https://web.whatsapp.com/"><img src="./assets/whatsapp.png" alt="Whatsapp"></a>
             </div>
 
         </nav>
 
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

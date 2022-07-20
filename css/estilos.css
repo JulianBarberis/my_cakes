@@ -9,20 +9,20 @@
     --text-color: #3B3537;
 
     /* SPACINGS */
-    --spacing-large:6rem;
+    --spacing-large:5rem;
     --spacing-medium:2.4rem;
-    --spacing-small:2rem;
-    --spacing-xsmall:1rem;
+    --spacing-small:1rem;
+    --spacing-xsmall:0.5rem;
     
     /* FONT-FAMILY */
     --font-principal:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     --font-title: 'Sacramento', cursive;
 
     /* FONT-SIZES */
-    --text-large:5.2em;
-    --text-medium:2.2em;
-    --text-base: 1.6em;
-    --text-small:1.4em;
+    --text-large:3.2rem;
+    --text-medium:1.8rem;
+    --text-base: 1.2rem;
+    --text-small:0.8rem;
 
 }
 
@@ -34,9 +34,6 @@
     box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
-}
 
 body{
     font-family:var(--font-principal)
@@ -51,66 +48,52 @@ a{
     text-decoration: none;
 }
 
-img {
-    width: 100%;
-}
-
 /* _____________________________HEADER__________________________ */
+
 .header {  
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.4fr 0.4fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "logo titulo titulo titulo titulo titulo titulo titulo titulo titulo titulo ."
-    "logo menu-header menu-header menu-header menu-header menu-header menu-header menu-header menu-header menu-header menu-header ."
-    "logo header-buscador header-buscador header-buscador header-buscador header-buscador header-buscador header-buscador header-buscador header-buscador header-buscador .";
-    /* background-image: url(../assets/fondo_header.jpg) ; */
     background-color:var(--primary);
-    background-image: linear-gradient(to top, var(--secondary), var(--primary));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 35rem;
-
+    height: 100%;
+    display: flex;
 }
-
 
 .header__logo {
     display: flex;
-    grid-area: logo;
-    height: 15rem;
-    width: 15rem;
+    height: 6.5rem;
+    width: 6.5rem;
+    align-items: center;
+    justify-content: center;
     display: inline-block;
     border-radius: 50%;
-    margin-top:  var(--spacing-medium);
-    margin-left: var(--spacing-medium);
+    margin-top: 1.5rem ;
+    margin-left: 1.5rem;
 }
 
 .header__logo img{
     background-color: var(--secondary);
-    border-radius: 2rem;
-    height: 12rem;
-    width: 12rem;
-    transition: 0.5s;
+    border-radius: 1rem;
+    height: 6rem;
+    width: 6rem;
+    transition: 0.4s;
 }
 
+/* .navbar{
+    background-color: #ED7AA4;
+} */
 .header__logo img:hover{
-    height: 14rem;
-    width: 14rem;
+    height: 6.5rem;
+    width: 6.5rem;
 }
   
 .header__titulo {
-    grid-area: titulo;
     text-align: center;
-    margin-bottom: 2rem;
-    
+    margin-top: 1.5rem;
 }
 
 .header__titulo h1{
-    margin-top: 4rem;
     font-family: var(--font-title);
     font-size: var(--text-large);
     color: var(--text-color);
@@ -123,67 +106,14 @@ img {
     font-size: var(--text-medium);
     color: var(--text-color);
 }
-  
-.header__menu {
-    grid-area: menu-header;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    text-transform: uppercase;
-    font-size: var(--text-small);
-}
 
-
-
-.header__menu a{
-    text-decoration: none;
-    color: var(--terciary);
-    transition: 1s;
-}
-
-.header__menu a:hover{
-    color: var(--coo_foot);
-}
-
-.header__menu li{
-    text-align: center;
-    list-style: none;
-    text-decoration: none;
-    padding: var(--spacing-xsmall);
-    margin: 1rem;
-    background-color: var(--coo_foot);
-    align-items: center;
-    justify-content:space-evenly;
-    transition: 1s; 
-}
-
-.header__menu li:hover{
+.btn-personal{
     background-color: var(--secondary);
+    color: var(--text-color);
 }
 
-.header__buscador{
-    grid-area: header-buscador;
-    display: flex;
-    padding: 1rem;
-    justify-content: center;
-    align-items:center ;
-    gap: 1rem;
-}
-
-.header__buscador--texto{
-    text-align: center;
-    font-size: var(--text-small);
-    width: 240px;
-    height: 3rem;
-    border: 1px solid var(--text-color);
-    border-radius: 1rem;
-}
-
-.header__buscador img{
-    height: 3rem;
-    width: 3rem;
+.btn-personal:hover{
+    color: var(--coo_foot);
 }
 
 /* ________________________TODOS_LOS_MAINS__________________________________________ */
@@ -198,132 +128,86 @@ img {
 
 
 .main__titulo{
-    font-size: var(--text-medium);
-    padding: 2rem;
-    padding-left: 3rem ;
+    padding: 1rem;
+    padding-left: 2rem ;
     color: var(--text-color);
-
 }
 
-.main__destacados {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "brownie tarta_frutilla number";
-    justify-items: center;
-
-}
-
-.brownie{
-    grid-area: brownie;
-}
-
-.tarta_frutilla{
-    grid-area: tarta_frutilla;
-}
-
-.number{
-    grid-area: number;
-}
-
-.main__destacados img{
-    width: 30rem;
-    height: 30rem;
-    border: solid 0.5rem var(--primary);
-    border-radius: 1.5rem;
-    transition: 0.5s;
-}
-
-.main__destacados img:hover{
-    height: 32rem;
-    width: 32rem;
-}
-  
-
-.main__destacados div{
-    font-size: var(--text-medium);
+.cards__destacadas{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40rem;
-    height: 40rem;
-    color: var(--text-color);
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding-bottom: 2rem;
 
 }
 
-
-
-.main__shots{
-    display: flex;
-    flex-direction: column;
-    width: 100rem;
-    height: 100rem;
-
+#brownie{
+    width: 20rem;
 }
 
-.main__shots img{
-    width: 50rem;
-    height: 50rem;
+#tarta_de_frutilla{
+    width: auto;
 }
 
-  
-.main__shots{
-    grid-area: shots;
+#number_cake{
+    width: 20rem;
 }
+
+.btn-main{
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.btn-main:hover{
+    background-color: var(--secondary);
+    color: var(--coo_foot);
+}
+
 
 /*____________________MAIN-SOBRE_NOSOTROS_________________________  */
 
-.main-sobre_nosotros {  display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "main-sobre_nosotros__titulo main-sobre_nosotros__titulo "
-    "main-sobre_nosotros__img main-sobre_nosotros__text ";
-    height: 80rem;
+.main-sobre_nosotros {  
+    width: 100%;
+    height: 100%;
 }
 
 .main-sobre_nosotros__titulo{
-    grid-area: main-sobre_nosotros__titulo;
-    font-size: 2.5rem;
-    color: var(--text-color);
     display: flex;
     align-items: center;
-    padding: 3rem;
+    padding: 1rem;
     padding-top: 2rem;
-    height: 10rem;
-}
-
-.main-sobre_nosotros__img { 
-    grid-area:main-sobre_nosotros__img;
-    display: flex;
-    justify-content: center;
-    height: 60rem;
-    width: 100%
 
 }
-.main-sobre_nosotros__img img{
-    height: 50rem;
-    width: 50rem;
-}
 
-.main-sobre_nosotros__text {
-    grid-area: main-sobre_nosotros__text;
-    font-size: 2rem;
-    display: flex;
-    flex-direction: column;
-    height: 50rem;
-    width: 50rem;
+.main-sobre_nosotros__titulo h3{
     color: var(--text-color);
+}
+
+.main-sobre_nosotros__orden{
+    display: flex;
+    flex-direction:row;
     align-items: center;
     justify-content: center;
+    padding-bottom: 2rem;
+}
+.main-sobre_nosotros__carrusel{
+    width: 50rem;
+    height: 40rem;
+    display: flex;
+    align-items: center;
 }
 
-.main-sobre_nosotros__text p{
-    padding: 0.5rem;
+.main-sobre_nosotros__carrusel img{
+    width: 50rem;
+    height: 40rem;
 }
+
+.main-sobre_nosotros__text{
+    font-size: 1.2rem;
+}
+
 
 
 /* ______________________FOOTER___________________________ */
@@ -336,8 +220,7 @@ img {
     grid-template-areas:
     "derechos menu redes";
     background-color: var(--coo_foot);
-    background-image: linear-gradient(to top, var(--coo_foot), var(--secondary));
-    padding: 2rem;
+    padding: 1rem;
 }
   
 .footer__derechos { 
@@ -346,17 +229,16 @@ img {
     justify-content: center;
     align-items: center;
     color: var(--terciary);
-    font-size: var(--text-medium);
+    font-size: var(--text-base);
 }
 
   
 .footer__menu { 
     grid-area: menu;
     display: flex;
-    font-size: var(--text-medium);
+    font-size: var(--text-base);
     justify-content: center;
     align-items: center;
-    
 }
 
 .footer__menu a{
@@ -370,87 +252,135 @@ img {
     justify-content: space-evenly;
 }
 
+.footer__redes div{
+    display: flex;
+    width: 6rem;
+    height: 6rem;
+    align-items: center;
+    justify-content: center;
+}
 .footer__redes img{
-    width: 8rem;
-    height: 8rem;
-    transition: 0.5s;
+    width: 5rem;
+    height: 5rem;
+    transition: 0.4s;
 }
 
 .footer__redes img:hover{
-    width: 10rem;
-    height: 10rem;
+    width: 6rem;
+    height: 6rem;
 }
 
 .footer__menu li{
     padding: 0.5rem;
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1199px){
+
+
+    /* _____________________MAIN-SOBRE_NOSOTROS___________________ */
+    .main-sobre_nosotros__text{
+        font-size: 1.2rem;
+        width: 40rem;
+        padding-top:2rem;
+    }
+}
+
+@media only screen and (max-width: 991px){
     /* ___________MAIN-INDEX_______________ */
-    .main__destacados div{
-        width: 20rem;
-        height: 30rem;
+
+    .cards__destacadas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .main__destacados img{
-        width: 20rem;
-        height: 20rem;
+    #brownie{
+        width: 40rem;
     }
-
-    .main__destacados img:hover{
-        height: 22rem;
-        width: 22rem;
+    
+    #tarta_de_frutilla{
+        width: 40rem;
+    }
+    
+    #number_cake{
+        width: 40rem;
     }
 
     /* _____________________MAIN-SOBRE_NOSOTROS___________________ */
-    .main-sobre_nosotros {  
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas:
-        "main-sobre_nosotros__titulo main-sobre_nosotros__titulo "
-        "main-sobre_nosotros__img main-sobre_nosotros__img"
-        "main-sobre_nosotros__text main-sobre_nosotros__text ";
-        height: 110rem;
+    .main-sobre_nosotros__carrusel{
+        width: 40rem;
+        height: 40rem;
     }
 
-    .main-sobre_nosotros__img{
-        align-items: flex-end;
-        height: 50rem;
-    }
-
-    .main-sobre_nosotros__text {
-        height: 52rem;
-        width: 100%;
-        color: var(--text-color);
-        justify-content: center;
-    }
-
-    .main-sobre_nosotros__text p{
-        width: 50rem;
-
+    .main-sobre_nosotros__text{
+        width: 30rem;
     }
 }
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
+     /* ___________MAIN-INDEX_______________ */
     .footer__redes { 
         flex-direction: column;
         align-items: center;
     }
 
-}
-  
-@media only screen and (max-width: 600px){
-    .main__destacados{
-        grid-template-columns: 1fr ; 
-        grid-template-rows: 1fr 1fr 1fr; 
-        grid-auto-flow: column;
-        grid-template-areas: 
-        "brownie" 
-        "tarta_frutilla"
-        "number";
+    #brownie{
+        width: 30rem;
     }
     
-   
+    #tarta_de_frutilla{
+        width: 30rem;
+    }
+    
+    #number_cake{
+        width: 30rem;
+    }
 
+    /* _____________________MAIN-SOBRE_NOSOTROS___________________ */
+
+}
+  
+@media only screen and (max-width: 540px){
+    .header__titulo h1{
+        font-size: var(--text-medium);
+    }
+    
+    .header__titulo h2{
+        font-size: var(--text-base);
+    }
+    .header__logo {
+        display: flex;
+        height: 4.5rem;
+        width: 4.5rem;
+        align-items: center;
+        justify-content: center;
+        display: inline-block;
+        border-radius: 50%;
+        margin-top: 1rem ;
+        margin-left: 1rem;
+    }
+    
+    .header__logo img{
+        background-color: var(--secondary);
+        border-radius: 1rem;
+        height: 4rem;
+        width: 4rem;
+        transition: 0.4s;
+    }
+    .header__logo img:hover{
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+    #brownie{
+        width: 20rem;
+    }
+    
+    #tarta_de_frutilla{
+        width: 20rem;
+    }
+    
+    #number_cake{
+        width: 20rem;
+    }
 }

@@ -1,91 +1,169 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My cakes | Sobre nosotros</title>
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- CSS PROPIO -->
     <link rel="stylesheet" href="../css/estilos.css">
+    <title>My cakes | Sobre nosotros</title>
 </head>
+
 <body>
     <header class="header">
+        <section class="container-fluid">
 
-        <div class="header__logo">
-            <a href="../index.html"><img src="../assets/logo.png" alt="Logo"></a>
-        </div>
+            <div class="row">
 
-        <div class="header__titulo">
-            <h1>My Cakes</h1>
-            <h2>Reposteria y Pasteleria</h2>
-        </div>
+                <div class="col-1 header__logo">
+                    <a href="../index.html"><img src="../assets/logo.png" alt="Logo"></a>
+                </div>
 
-        <ul class="header__menu">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./productos.html">Productos</a></li>
-            <li><a href="./sobre_nosotros.html">Sobre nosotros</a></li>
-            <li><a href="./contactanos.html">Contactanos</a></li>
-            <li><a href="./como_encontrarnos.html">Como encontrarnos</a></li>
-        </ul>
+                <div class="col-10 header__titulo">
+                    <h1>My Cakes</h1>
+                    <h2>Reposteria y Pasteleria</h2>
+                </div>
 
-        <div class="header__buscador">
-            <input class="header__buscador--texto" type="text" name="buscador" id="buscador" placeholder="¿Qué estás buscando?"> 
-            <img  class="lupa" src="../assets/lupa.png" alt="lupa">
-        </div>
+            </div>
 
-        
+            <nav class="row navbar navbar-expand-lg">
+                <section class="container-fluid">
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./sobre_nosotros.html">Sobre nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contactanos.html">Contactanos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./como_encontrarnos.html">Como encontrarnos</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="¿Que estas buscando?"
+                                aria-label="Search">
+                            <button class="btn btn-personal" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </section>
+            </nav>
+
+        </section>
+
     </header>
 
     <main class="main">
-        <section class="main-sobre_nosotros">
-            <div class="main-sobre_nosotros__titulo">
+        <section class="main-sobre_nosotros container-fluid">
+            <div class="row main-sobre_nosotros__titulo">
                 <h3>
                     Nosotros y nuestra historia:
                 </h3>
             </div>
 
-            <div class="main-sobre_nosotros__img">
-                <img src="../assets/collage.png" alt="collage">
-            </div>
-
-            <div class="main-sobre_nosotros__text">
-                <p>
-                    Nuestro emprendimiento comenzo en 2016 cuando Natalia, para todos Naty, decidio dedicarse a lo que tanto le gustaba, que era decorar tortas.
-            
-                </p>
-                
-                <p>
-                    Por esto y por el impulso de hacer las tortas para su hijo mas pequeño decidio realizar un curso de decoracion de tortas.
-                    En este, aprendio muchas tecnicas y procedimientos para realizar su trabajo de la mejor manera, conocio muchas colegas con las que mantiene el contacto y realiza algunos trabajos.
-                    
-                </p>
-
-                <p>
-                    Ese mismo año, decidio comenzar su emprendimiento con una pagina Instagram, con la que de a poco se hizo conocida y hoy en dia tiene clientes que la siguen eligiendo porla calidad de sus productos y nuevos que se van sumando día a día.
-                </p>
-
-                <p>
-                    En 2020, abrio su primer local en Villa Ballester el cual crece dia a dia.
-                   
-                </p>
-
-                <p>
-                    Hoy en día sigue sumando clientes y haciendo feliz a todos y cada uno de ellos.
-                </p>
-            </div>
-
+            <section class="row main-sobre_nosotros__orden">
+                <div id="carouselExampleCaptions" class="col-lg-8 col-md-6  carousel slide main-sobre_nosotros__carrusel" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/historia/2016_primer_pedido.jpg" class="d-block w-100" alt="primer_pedido">
+                            <div class="carousel-caption d-none d-md-block main-sobre_nosotros__carrusel__descripcion">
+                                <h5>Nuestro primer pedido</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/historia/2018_dinosaurio.jpg" class="d-block w-100" alt="dinosaurio">
+                            <div class="carousel-caption d-none d-md-block main-sobre_nosotros__carrusel__descripcion">
+                                <h5>Primer torta dos pisos con muffins</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/historia/2018_fernet.jpg" class="d-block w-100" alt="primer_torta_antigravedad">
+                            <div class="carousel-caption d-none d-md-block main-sobre_nosotros__carrusel__descripcion">
+                                <h5>Primer torta antigravedad</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/collage.png" class="d-block w-100" alt="actualidad_collage">
+                            <div class="carousel-caption d-none d-md-block main-sobre_nosotros__carrusel__descripcion ">
+                                <h5>Actualidad</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+    
+    
+                <div class="col-lg-4 col-md-6 main-sobre_nosotros__text ">
+                    <p>
+                        Nuestro emprendimiento comenzo en 2016 cuando Natalia, para todos Naty, decidio dedicarse a lo que
+                        tanto le gustaba, que era decorar tortas.
+    
+                    </p>
+    
+                    <p>
+                        Por esto y por el impulso de hacer las tortas para su hijo mas pequeño decidio realizar un curso de
+                        decoracion de tortas.
+                        En este, aprendio muchas tecnicas y procedimientos para realizar su trabajo de la mejor manera,
+                        conocio muchas colegas con las que mantiene el contacto y realiza algunos trabajos.
+    
+                    </p>
+    
+                    <p>
+                        Ese mismo año, decidio comenzar su emprendimiento con una pagina Instagram, con la que de a poco se
+                        hizo conocida y hoy en dia tiene clientes que la siguen eligiendo porla calidad de sus productos y
+                        nuevos que se van sumando día a día.
+                    </p>
+    
+                    <p>
+                        En 2020, abrio su primer local en Villa Ballester el cual crece dia a dia.
+    
+                    </p>
+    
+                    <p>
+                        Hoy en día sigue sumando clientes y haciendo feliz a todos y cada uno de ellos.
+                    </p>
+                </div>
+            </section>
         </section>
     </main>
 
-    <br><br>
-    
     <footer class="footer">
-       
-        <div class="footer__derechos">
-        <p>
-            Todos los derechos reservados
 
-        </p>
-        
+        <div class="footer__derechos">
+            <p>
+                Todos los derechos reservados
+            </p>
+
         </div>
 
         <nav class="footer__menu">
@@ -98,10 +176,16 @@
             </ul>
         </nav>
 
-        <nav >
-            <div class="footer__redes">
+        <nav class="footer__redes">
+            <div>
                 <a href="https://www.facebook.com/"><img src="../assets/facebook.png" alt="Facebook"></a>
+            </div>
+
+            <div>
                 <a href="https://www.instagram.com/"><img src="../assets/instagram.png" alt="Instagram"></a>
+            </div>
+
+            <div>
                 <a href="https://web.whatsapp.com/"><img src="../assets/whatsapp.png" alt="Whatsapp"></a>
             </div>
 
@@ -109,5 +193,10 @@
 
     </footer>
 
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
