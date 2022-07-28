@@ -58,62 +58,44 @@ a{
     width: 100%;
     height: 100%;
     display: flex;
-}
-
-.header__logo {
-    display: flex;
-    height: 6.5rem;
-    width: 6.5rem;
-    align-items: center;
-    justify-content: center;
-    display: inline-block;
-    border-radius: 50%;
-    margin-top: 1.5rem ;
-    margin-left: 1.5rem;
-}
-
-.header__logo img{
-    background-color: var(--secondary);
-    border-radius: 1rem;
-    height: 6rem;
-    width: 6rem;
-    transition: 0.4s;
-}
-
-/* .navbar{
-    background-color: #ED7AA4;
-} */
-.header__logo img:hover{
-    height: 6.5rem;
-    width: 6.5rem;
-}
-  
-.header__titulo {
-    text-align: center;
-    margin-top: 1.5rem;
-}
-
-.header__titulo h1{
-    font-family: var(--font-title);
-    font-size: var(--text-large);
-    color: var(--text-color);
-
-}
-
-.header__titulo h2{
-    margin: var(--spacing-small);
-    font-family: var(--font-title);
-    font-size: var(--text-medium);
-    color: var(--text-color);
-}
-
-.btn-personal{
-    background-color: var(--secondary);
-    color: var(--text-color);
-}
-
-.btn-personal:hover{
-    color: var(--coo_foot);
+    .header__logo {
+        display: flex;
+        height: 6.5rem;
+        width: 6.5rem;
+        align-items: center;
+        justify-content: center;
+        display: inline-block;
+        border-radius: 50%;
+        margin-top: 1.5rem ;
+        margin-left: 1.5rem;
+        img{
+            background-color: var(--secondary);
+            border-radius: 1rem;
+            height: 6rem;
+            width: 6rem;
+            transition: 0.4s;
+            &:hover{
+                height: 6.5rem;
+                width: 6.5rem;
+            }
+        }
+    }
+    .header__titulo {
+        text-align: center;
+        margin-top: 1.5rem;
+        h1{
+            font-family: var(--font-title);
+            font-size: var(--text-large);
+            color: var(--text-color);
+        
+        }
+        h2{
+            margin: var(--spacing-small);
+            font-family: var(--font-title);
+            font-size: var(--text-medium);
+            color: var(--text-color);
+        }
+    } 
 }
 
 /* ________________________TODOS_LOS_MAINS__________________________________________ */
@@ -122,16 +104,24 @@ a{
     background-color: var(--secondary);
     height: 100%;
     width: 100%;
+    .main__titulo{
+        padding: 1rem;
+        padding-left: 2rem ;
+        color: var(--text-color);
+    }
 }
+
+.btn-personal{
+    background-color: var(--secondary);
+    color: var(--text-color);
+    &:hover{
+        color: var(--coo_foot);
+    }
+}
+
 
 /* ___________________________MAIN-INDEX__________________________ */
 
-
-.main__titulo{
-    padding: 1rem;
-    padding-left: 2rem ;
-    color: var(--text-color);
-}
 
 .cards__destacadas{
     display: flex;
@@ -158,32 +148,18 @@ a{
 .btn-main{
     background-color: var(--primary);
     color: var(--secondary);
+    &:hover{
+        background-color: var(--secondary);
+        color: var(--coo_foot);
+    }
 }
 
-.btn-main:hover{
-    background-color: var(--secondary);
-    color: var(--coo_foot);
-}
+
+/*____________________MAIN_PRODUCTOS_________________________  */
 
 
 /*____________________MAIN-SOBRE_NOSOTROS_________________________  */
 
-.main-sobre_nosotros {  
-    width: 100%;
-    height: 100%;
-}
-
-.main-sobre_nosotros__titulo{
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    padding-top: 2rem;
-
-}
-
-.main-sobre_nosotros__titulo h3{
-    color: var(--text-color);
-}
 
 .main-sobre_nosotros__orden{
     display: flex;
@@ -191,24 +167,47 @@ a{
     align-items: center;
     justify-content: center;
     padding-bottom: 2rem;
-}
-.main-sobre_nosotros__carrusel{
-    width: 50rem;
-    height: 40rem;
-    display: flex;
-    align-items: center;
-}
-
-.main-sobre_nosotros__carrusel img{
-    width: 50rem;
-    height: 40rem;
+    .main-sobre_nosotros__carrusel{
+        width: 50rem;
+        height: 40rem;
+        display: flex;
+        align-items: center;
+        img{
+            width: 50rem;
+            height: 40rem;
+        }
+    }
 }
 
 .main-sobre_nosotros__text{
     font-size: 1.2rem;
 }
 
+/*____________________MAIN_CONTACTANOS_________________________  */
 
+.formulario{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 2rem;
+    color: var(--text-color);
+}
+
+/*____________________MAIN_COMO_ENCONTRARNOS_________________________  */
+
+.main-como_encontrarnos{
+    display: flex;
+    flex-direction: row;
+    .main-como_encontrarnos-text{
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+    }
+    .main-como_encontrarnos-mapa{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+}
 
 /* ______________________FOOTER___________________________ */
 
@@ -221,58 +220,52 @@ a{
     "derechos menu redes";
     background-color: var(--coo_foot);
     padding: 1rem;
-}
-  
-.footer__derechos { 
-    grid-area: derechos; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--terciary);
-    font-size: var(--text-base);
-}
-
-  
-.footer__menu { 
-    grid-area: menu;
-    display: flex;
-    font-size: var(--text-base);
-    justify-content: center;
-    align-items: center;
-}
-
-.footer__menu a{
-    text-decoration: none;
-    color: var(--terciary);
-}
-.footer__redes { 
-    grid-area: redes;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.footer__redes div{
-    display: flex;
-    width: 6rem;
-    height: 6rem;
-    align-items: center;
-    justify-content: center;
-}
-.footer__redes img{
-    width: 5rem;
-    height: 5rem;
-    transition: 0.4s;
-}
-
-.footer__redes img:hover{
-    width: 6rem;
-    height: 6rem;
+    .footer__derechos { 
+        grid-area: derechos; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--terciary);
+        font-size: var(--text-base);
+    }
+    .footer__menu { 
+        grid-area: menu;
+        display: flex;
+        font-size: var(--text-base);
+        justify-content: center;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color: var(--terciary);
+        }
+        li{
+            padding: 0.5rem;
+        }
+    }
+    .footer__redes { 
+        grid-area: redes;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        div{
+            display: flex;
+            width: 6rem;
+            height: 6rem;
+            align-items: center;
+            justify-content: center;
+        }
+        img{
+            width: 5rem;
+            height: 5rem;
+            transition: 0.4s;
+            &:hover{
+                width: 6rem;
+                height: 6rem;
+            }
+        }
+    }
 }
 
-.footer__menu li{
-    padding: 0.5rem;
-}
 
 @media only screen and (max-width: 1199px){
 

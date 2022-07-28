@@ -29,7 +29,7 @@
 
             </div>
 
-            <nav class="row navbar navbar-expand-lg" style="background-color: #ED7AA4 ;">
+            <nav class="row navbar navbar-expand-lg" >
                 <section class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -67,12 +67,55 @@
     </header>
 
 
-    <main>
-        <h1>Contactanos y hace tu pedido</h1>
+    <main class="main">
+        <div class="main__titulo">
+            <h3>Contactanos y hace tu pedido</h3>
+        </div>
 
-        <h2>Contactanos y pedi el presupuesto para tu torta, budin, o lo que mas te guste.</h2>
+        <section class="formulario">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                    <input type="name" class="form-control" id="exampleFormControlInput1" required="" >
+                </div>
+                <div class="col-md-6">
+                    <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+                    <input type="name" class="form-control" id="exampleFormControlInput1" required="" >
+                </div>            
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                    <label for="exampleFormControlInput1" class="form-label">Numero de telefono</label>
+                    <input type="number" class="form-control" id="exampleFormControlInput1" required="">
+                </div>
+                <div class="col-md-12">
+                    <label for="inputState" class="form-label">¿Que vas a pedir?</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>Selecciona que pedir</option>
+                      <option>Torta de un piso</option>
+                      <option>Torta de dos pisos</option>
+                      <option>Torta de tres pisos</option>
+                      <option>Brownie</option>
+                      <option>Tarta de frutilla</option>
+                      <option>Number/Letter Cake</option>
+                      <option>Shots</option>
+                      <option>Macarons</option>
+                      <option>Lemon Pie</option>
+                    </select>
+                </div>
+                <div class="col-md-12">
+                    <label for="FormControlTextarea1" class="form-label">Detalles que quieras agregar</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+              <button type="button submit" class="btn btn-secondary">Enviar</button>
+            </form>
+        </section>
 
-        <form action="">
+
+
+        <!-- <form action="">
             <fieldset>
                 <legend>Datos personales</legend>
                 <label for="nombre">Nombre</label>
@@ -89,39 +132,39 @@
                 required>
             </fieldset>
             <fieldset>
-                <legend>Hace tu pedido</legend>
+                <legend>Hace tu pedido</legend> -->
 
                 <!--Menu desplegable-->
-                <label for="pedido">¿Que vas a pedir?</label>
+                <!-- <label for="pedido">¿Que vas a pedir?</label>
                 <select name="pedido" id="pedido">
                     <option value="value">Selecciona que pedir</option>
                     <option value="torta_decorada">Torta decorada</option>
                     <option value="brownie">Brownie</option>
                     <option value="tarta_frutilla">Tarta de frutilla</option>
                     <option value="number/letter_cake">Number/Letter Cake</option>
-                </select>
+                </select> -->
 
                 <!--Seleccionar una -->
-                <label for="Invitados">¿Cuantas personas van a comer?</label>
+                <!-- <label for="Invitados">¿Cuantas personas van a comer?</label>
                 <input type="radio" name="cant">10
                 <input type="radio" name="cant">20
                 <input type="radio" name="cant">30
                 <input type="radio" name="cant">50
                 <input type="radio" name="cant">75 o mas
 
-                <br><br>
+                <br><br> -->
 
                 <!--Checkbox-->
-                <div> ¿Vas a querer algo mas? </div>
+                <!-- <div> ¿Vas a querer algo mas? </div>
                 <input type="checkbox" name="adicional">Alfajorcitos de maicena
                 <input type="checkbox" name="adicional">Budín de limon
                 <input type="checkbox" name="adicional">Cookies
 
                 <br>
-                <br>
+                <br> -->
 
                 <!-- Textarea-->
-                <label for="Detalles">Detalles que quieras agregar</label>
+                <!-- <label for="Detalles">Detalles que quieras agregar</label>
                 <br>
                 <textarea name="comentario" id="come" cols="50" rows="10" maxlength="500">
                 </textarea>
@@ -132,13 +175,11 @@
                 <input type="reset" value="Limpiar formulario">
                 
             </fieldset>
-        </form>
+        </form>-->
 
 
     </main>
 
-    <br><br>
-    
     <footer class="footer">
 
         <div class="footer__derechos">
