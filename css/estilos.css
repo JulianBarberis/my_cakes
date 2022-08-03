@@ -1,4 +1,3 @@
-/* _____________NORMALIZE________________*/
 :root {
   /* COLORS */
   --primary: #ED7AA4;
@@ -37,7 +36,19 @@ ul {
 a {
   text-decoration: none; }
 
-/* _____________________________HEADER__________________________ */
+.btn-personal {
+  background-color: var(--secondary);
+  color: var(--text-color); }
+  .btn-personal:hover {
+    color: var(--coo_foot); }
+
+.btn-main {
+  background-color: var(--primary);
+  color: var(--secondary); }
+  .btn-main:hover {
+    background-color: var(--secondary);
+    color: var(--coo_foot); }
+
 .header {
   background-color: var(--primary);
   background-repeat: no-repeat;
@@ -78,7 +89,6 @@ a {
       font-size: var(--text-medium);
       color: var(--text-color); }
 
-/* ________________________TODOS_LOS_MAINS__________________________________________ */
 .main {
   background-color: var(--secondary);
   height: 100%;
@@ -88,44 +98,47 @@ a {
     padding-left: 2rem;
     color: var(--text-color); }
 
-.btn-personal {
-  background-color: var(--secondary);
-  color: var(--text-color); }
-  .btn-personal:hover {
-    color: var(--coo_foot); }
-
-/* ___________________________MAIN-INDEX__________________________ */
 .cards__destacadas {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
   justify-content: space-evenly;
+  align-items: stretch;
   gap: 2rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  align-items: flex-start; }
 
 #brownie {
-  width: 20rem; }
+  width: 26rem; }
 
 #tarta_de_frutilla {
   width: auto; }
 
 #number_cake {
+  width: 28rem; }
+
+#torta_de_un_piso {
+  width: 30rem; }
+
+#torta_de_dos_pisos {
   width: 20rem; }
 
-.btn-main {
-  background-color: var(--primary);
-  color: var(--secondary); }
-  .btn-main:hover {
-    background-color: var(--secondary);
-    color: var(--coo_foot); }
+#torta_de_tres_pisos {
+  width: 30rem; }
 
-/*____________________MAIN_PRODUCTOS_________________________  */
-/*____________________MAIN-SOBRE_NOSOTROS_________________________  */
+#shots {
+  width: 50rem; }
+
+#macarons {
+  width: 28rem; }
+
+#lemon_pie {
+  width: 66rem; }
+
 .main-sobre_nosotros__orden {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   padding-bottom: 2rem; }
   .main-sobre_nosotros__orden .main-sobre_nosotros__carrusel {
     width: 50rem;
@@ -139,14 +152,12 @@ a {
 .main-sobre_nosotros__text {
   font-size: 1.2rem; }
 
-/*____________________MAIN_CONTACTANOS_________________________  */
 .formulario {
   padding-left: 5rem;
   padding-right: 5rem;
   padding-bottom: 2rem;
   color: var(--text-color); }
 
-/*____________________MAIN_COMO_ENCONTRARNOS_________________________  */
 .main-como_encontrarnos {
   display: flex;
   flex-direction: row; }
@@ -159,7 +170,6 @@ a {
     padding-right: 2rem;
     padding-bottom: 2rem; }
 
-/* ______________________FOOTER___________________________ */
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -171,6 +181,7 @@ a {
   .footer .footer__derechos {
     grid-area: derechos;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--terciary);
@@ -179,6 +190,7 @@ a {
     grid-area: menu;
     display: flex;
     font-size: var(--text-base);
+    flex-direction: column;
     justify-content: center;
     align-items: center; }
     .footer .footer__menu a {
@@ -190,7 +202,8 @@ a {
     grid-area: redes;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    align-items: center; }
     .footer .footer__redes div {
       display: flex;
       width: 6rem;
@@ -224,6 +237,18 @@ a {
     width: 40rem; }
   #number_cake {
     width: 40rem; }
+  #torta_de_un_piso {
+    width: 40rem; }
+  #torta_de_dos_pisos {
+    width: 40rem; }
+  #torta_de_tres_pisos {
+    width: 40rem; }
+  #shots {
+    width: 40rem; }
+  #macarons {
+    width: 40rem; }
+  #lemon_pie {
+    width: 40rem; }
   /* _____________________MAIN-SOBRE_NOSOTROS___________________ */
   .main-sobre_nosotros__carrusel {
     width: 40rem;
@@ -242,9 +267,26 @@ a {
     width: 30rem; }
   #number_cake {
     width: 30rem; }
-  /* _____________________MAIN-SOBRE_NOSOTROS___________________ */ }
+  #torta_de_un_piso {
+    width: 30rem; }
+  #torta_de_dos_pisos {
+    width: 30rem; }
+  #torta_de_tres_pisos {
+    width: 30rem; }
+  #shots {
+    width: 30rem; }
+  #macarons {
+    width: 30rem; }
+  #lemon_pie {
+    width: 30rem; }
+  /* ______________________FOOTER___________________________ */
+  .footer__redes {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 @media only screen and (max-width: 540px) {
+  /* _____________________________HEADER__________________________ */
   .header__titulo h1 {
     font-size: var(--text-medium); }
   .header__titulo h2 {
@@ -273,4 +315,19 @@ a {
   #tarta_de_frutilla {
     width: 20rem; }
   #number_cake {
-    width: 20rem; } }
+    width: 20rem; }
+  #torta_de_un_piso {
+    width: 20rem; }
+  #torta_de_dos_pisos {
+    width: 20rem; }
+  #torta_de_tres_pisos {
+    width: 20rem; }
+  #shots {
+    width: 20rem; }
+  #macarons {
+    width: 20rem; }
+  #lemon_pie {
+    width: 20rem; }
+  /* ______________________FOOTER___________________________ */
+  .footer__redes {
+    flex-direction: column !important; } }

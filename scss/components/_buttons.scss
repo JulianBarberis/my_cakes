@@ -1,0 +1,17 @@
+
+.btn-personal{
+    background-color: var(--secondary);
+    color: var(--text-color);
+    &:hover{
+        color: var(--coo_foot);
+    }
+}
+
+.btn-main{
+    background-color: var(--primary);
+    color: var(--secondary);
+    &:hover{
+        background-color: var(--secondary);
+        color: var(--coo_foot);
+    }
+}

@@ -1,0 +1,195 @@
+
+@media only screen and (max-width: 1199px){
+
+
+    /* _____________________MAIN-SOBRE_NOSOTROS___________________ */
+    .main-sobre_nosotros__text{
+        font-size: 1.2rem;
+        width: 40rem;
+        padding-top:2rem;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    /* ___________MAIN-INDEX_______________ */
+
+    .cards__destacadas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #brownie{
+        width: 40rem;
+    }
+    
+    #tarta_de_frutilla{
+        width: 40rem;
+    }
+    
+    #number_cake{
+        width: 40rem;
+    }
+
+    #torta_de_un_piso{
+        width: 40rem;
+    }
+    
+    #torta_de_dos_pisos{
+        width: 40rem;
+    }
+    
+    #torta_de_tres_pisos{
+        width: 40rem;
+    }
+    
+    #shots{
+        width: 40rem;
+    }
+    
+    #macarons{
+        width: 40rem;
+    }
+    
+    #lemon_pie{
+        width: 40rem;
+    }
+
+    /* _____________________MAIN-SOBRE_NOSOTROS___________________ */
+    .main-sobre_nosotros__carrusel{
+        width: 40rem;
+        height: 40rem;
+    }
+
+    .main-sobre_nosotros__text{
+        width: 30rem;
+    }
+}
+
+
+@media only screen and (max-width: 767px){
+     /* ___________MAIN-INDEX_______________ */
+    .footer__redes { 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #brownie{
+        width: 30rem;
+    }
+    
+    #tarta_de_frutilla{
+        width: 30rem;
+    }
+    
+    #number_cake{
+        width: 30rem;
+    }
+
+    #torta_de_un_piso{
+        width: 30rem;
+    }
+    
+    #torta_de_dos_pisos{
+        width: 30rem;
+    }
+    
+    #torta_de_tres_pisos{
+        width: 30rem;
+    }
+    
+    #shots{
+        width: 30rem;
+    }
+    
+    #macarons{
+        width: 30rem;
+    }
+    
+    #lemon_pie{
+        width: 30rem;
+    }
+    
+    /* ______________________FOOTER___________________________ */
+
+    .footer__redes{
+        @include flexbox (column,center,center);
+    }
+}
+  
+@media only screen and (max-width: 540px){
+
+/* _____________________________HEADER__________________________ */
+
+    .header__titulo h1{
+        font-size: var(--text-medium);
+    }
+    
+    .header__titulo h2{
+        font-size: var(--text-base);
+    }
+    .header__logo {
+        display: flex;
+        height: 4.5rem;
+        width: 4.5rem;
+        align-items: center;
+        justify-content: center;
+        display: inline-block;
+        border-radius: 50%;
+        margin-top: 1rem ;
+        margin-left: 1rem;
+    }
+    
+    .header__logo img{
+        background-color: var(--secondary);
+        border-radius: 1rem;
+        height: 4rem;
+        width: 4rem;
+        transition: 0.4s;
+    }
+    .header__logo img:hover{
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+    #brownie{
+        width: 20rem;
+    }
+    
+    #tarta_de_frutilla{
+        width: 20rem;
+    }
+    
+    #number_cake{
+        width: 20rem;
+    }
+
+    #torta_de_un_piso{
+        width: 20rem;
+    }
+    
+    #torta_de_dos_pisos{
+        width: 20rem;
+    }
+    
+    #torta_de_tres_pisos{
+        width: 20rem;
+    }
+    
+    #shots{
+        width: 20rem;
+    }
+    
+    #macarons{
+        width: 20rem;
+    }
+    
+    #lemon_pie{
+        width: 20rem;
+    }
+
+    /* ______________________FOOTER___________________________ */
+
+    .footer__redes{
+        flex-direction: column !important;
+    }
+}

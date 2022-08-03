@@ -1,0 +1,19 @@
+.cards__destacadas{
+    display: flex;
+    @include flexbox (row,space-evenly,stretch);
+    gap: 2rem;
+    padding-bottom: 2rem;
+    align-items: flex-start;
+}
+
+#brownie{
+    width: 26rem;
+}
+
+#tarta_de_frutilla{
+    width: auto;
+}
+
+#number_cake{
+    width: 28rem;
+}

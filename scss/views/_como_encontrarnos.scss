@@ -1,0 +1,15 @@
+
+.main-como_encontrarnos{
+    display: flex;
+    flex-direction: row;
+    .main-como_encontrarnos-text{
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+    }
+    .main-como_encontrarnos-mapa{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+}
