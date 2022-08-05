@@ -6,23 +6,23 @@
     grid-auto-flow: row;
     grid-template-areas:
     "derechos menu redes";
-    background-color: var(--coo_foot);
+    background-color: $color-footer;
     padding: 1rem;
     .footer__derechos { 
         grid-area: derechos; 
         display: flex;
         @include flexbox (column,center,center);
-        color: var(--terciary);
-        font-size: var(--text-base);
+        color: $color-terciary;
+        font-size: $text-base;
     }
     .footer__menu { 
         grid-area: menu;
         display: flex;
-        font-size: var(--text-base);
+        font-size: $text-base;
         @include flexbox (column,center,center);
         a{
             text-decoration: none;
-            color: var(--terciary);
+            color: $color-terciary;
         }
         li{
             padding: 0.5rem;

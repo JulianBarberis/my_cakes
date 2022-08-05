@@ -1,17 +1,17 @@
 
 .btn-personal{
-    background-color: var(--secondary);
-    color: var(--text-color);
+    background-color: $color-secondary;
+    color: $text-color;
     &:hover{
-        color: var(--coo_foot);
+        color: $color-footer;
     }
 }
 
 .btn-main{
-    background-color: var(--primary);
-    color: var(--secondary);
+    background-color: $color-primary;
+    color: $color-secondary;
     &:hover{
-        background-color: var(--secondary);
-        color: var(--coo_foot);
+        background-color: $color-secondary;
+        color: $color-footer;
     }
 }
