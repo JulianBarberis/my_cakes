@@ -78,8 +78,9 @@ a {
         font-size: 2.5rem;
         color: #3B3537; }
   .header .header__navbar {
-    padding-left: 2rem;
-    padding-right: 2rem; }
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%; }
 
 .main {
   background-color: #F0DBF2;
@@ -225,9 +226,6 @@ a {
         height: 6rem; }
 
 @media only screen and (max-width: 1199px) {
-  .header .header__navbar {
-    padding-left: 1rem;
-    padding-right: 1rem; }
   /* _____________________SOBRE_NOSOTROS___________________ */
   .main-sobre_nosotros__text {
     font-size: 1.2rem;
