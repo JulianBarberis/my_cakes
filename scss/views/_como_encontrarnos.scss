@@ -2,14 +2,31 @@
 .main-como_encontrarnos{
     display: flex;
     flex-direction: row;
-    .main-como_encontrarnos-text{
-        padding: 2rem;
-        display: flex;
-        align-items: center;
-    }
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     .main-como_encontrarnos-mapa{
         padding-left: 2rem;
         padding-right: 2rem;
         padding-bottom: 2rem;
+        iframe{
+            width: 100%;
+        }
     }
+    .main-como_encontrarnos-local{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.main-como_encontrarnos-text{
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: center;
+    align-items: center;
 }

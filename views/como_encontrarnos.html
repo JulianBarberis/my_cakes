@@ -15,56 +15,52 @@
 </head>
 <body>
     <header class="header">
-        <section class="container-fluid">
+        <div class="header__encabezado">
 
-            <div class="row">
-
-                <div class="col-1 header__logo">
-                    <a href="../index.html"><img src="../assets/logo.png" alt="Logo"></a>
-                </div>
-
-                <div class="col-10 header__titulo">
-                    <h1>My Cakes</h1>
-                    <h2>Reposteria y Pasteleria</h2>
-                </div>
-
+            <div class="header__encabezado--logo">
+                <a href="../index.html"><img src="../assets/logo.png" alt="Logo"></a>
             </div>
 
-            <nav class="row navbar navbar-expand-lg" >
-                <section class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./productos.html">Productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./sobre_nosotros.html">Sobre nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contactanos.html">Contactanos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./como_encontrarnos.html">Como encontrarnos</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="¿Que torta buscas?" aria-label="Search">
-                            <button class="btn btn-personal" type="submit">Buscar</button>
-                        </form>
-                    </div>
-                </section>
-            </nav>
+            <div class="header__encabezado--titulo">
+                <h1>My Cakes</h1>
+                <h2>Reposteria y Pasteleria</h2>
+            </div>
 
-        </section>
+        </div>
 
+        <nav class="row header__navbar navbar navbar-expand-lg">
+            <section class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre_nosotros.html">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactanos.html">Contactanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./como_encontrarnos.html">Como encontrarnos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="¿Que torta buscas?"
+                            aria-label="Search">
+                        <button class="btn btn-personal" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </section>
+        </nav>
     </header>
 
 
@@ -73,16 +69,20 @@
             <h3>Como encontrarnos</h3>
         </div>
 
+        <div class="main-como_encontrarnos-text">
+            <p>
+                Nos encontramos en Villa Ballester de Lunes a Viernes de 10 hs a 20 hs y los sabados de 10hs a 14hs.
+            </p>
+        </div>
         <section class="main-como_encontrarnos">
             <div class="main-como_encontrarnos-mapa">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26289.133609618166!2d-58.58031479314616!3d-34.54996745028423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9f880d30623%3A0xf63bd5e2b5393d70!2sVilla%20Ballester%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1658964104727!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="main-como_encontrarnos-text">
-                <p>
-                    Nos encontramos en Villa Ballester de Lunes a Viernes de 10 hs a 20 hs y los sabados de 10hs a 14hs.
-                </p>
+            <div class="main-como_encontrarnos-local">
+                <img src="../assets/local.jpg" alt="local">
             </div>
         </section>
+
        
 
         

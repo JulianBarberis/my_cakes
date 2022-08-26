@@ -12,60 +12,55 @@
     <!-- CSS PROPIO -->
     <link rel="stylesheet" href="../css/estilos.css">
     <title>My cakes | Contactanos</title>
-
 </head>
 <body>
     <header class="header">
-        <section class="container-fluid">
+        <div class="header__encabezado">
 
-            <div class="row">
-
-                <div class="col-1 header__logo">
-                    <a href="../index.html"><img src="../assets/logo.png" alt="Logo"></a>
-                </div>
-
-                <div class="col-10 header__titulo">
-                    <h1>My Cakes</h1>
-                    <h2>Reposteria y Pasteleria</h2>
-                </div>
-
+            <div class="header__encabezado--logo">
+                <a href="../index.html"><img src="../assets/logo.png" alt="Logo"></a>
             </div>
 
-            <nav class="row navbar navbar-expand-lg" >
-                <section class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./productos.html">Productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./sobre_nosotros.html">Sobre nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contactanos.html">Contactanos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./como_encontrarnos.html">Como encontrarnos</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="¿Que torta buscas?" aria-label="Search">
-                            <button class="btn btn-personal" type="submit">Buscar</button>
-                        </form>
-                    </div>
-                </section>
-            </nav>
+            <div class="header__encabezado--titulo">
+                <h1>My Cakes</h1>
+                <h2>Reposteria y Pasteleria</h2>
+            </div>
 
-        </section>
+        </div>
 
+        <nav class="row header__navbar navbar navbar-expand-lg">
+            <section class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre_nosotros.html">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactanos.html">Contactanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./como_encontrarnos.html">Como encontrarnos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="¿Que torta buscas?"
+                            aria-label="Search">
+                        <button class="btn btn-personal" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </section>
+        </nav>
     </header>
 
 
@@ -111,7 +106,7 @@
                     <label for="FormControlTextarea1" class="form-label">Detalles que quieras agregar</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-              <button type="button submit" class="btn btn-secondary">Enviar</button>
+              <button type="button submit" class="btn btn-contactanos">Enviar</button>
             </form>
         </section>
 
